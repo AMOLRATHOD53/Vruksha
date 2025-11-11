@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Grow Rose - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #ffe6eb;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #d81b60;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .section {
+      background: white;
+      width: 85%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #ad1457;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ad1457;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #d81b60;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      img { width: 90%; }
+      .section { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌹 How to Grow Roses (Farmer’s Way)</header>
+
+  <img src="images/rose.png" alt="Rose">
+
+  <div class="section">
+    <div class="title">👨‍🌾 Hello Gardener!</div>
+    <p>
+      Roses are called the “queen of flowers” — colorful, sweet-smelling, and loved by everyone.  
+      They need love, sunlight, and a bit of patience, but they’ll make your garden look royal.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌱 Step 1 — Preparing the Soil</div>
+    <p>
+      Roses like soil that’s rich and well-drained.  
+      👉 Mix garden soil with compost or cow dung (2 parts soil + 1 part compost).<br>
+      👉 Avoid hard or clay soil — it blocks roots from breathing.<br>
+      👉 Make sure the pot or bed has holes so extra water can escape.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌿 Step 2 — Planting the Rose</div>
+    <p>
+      You can grow roses from a cutting or a small nursery plant.<br><br>
+      👉 If using a cutting, dip it in rooting powder and plant 2–3 inches deep.<br>
+      👉 Water lightly and keep in partial shade for 3–4 days.<br>
+      👉 Once it starts showing new leaves, move to a sunny spot.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">☀️ Step 3 — Sunlight</div>
+    <p>
+      Roses love the sun! Give them **5–6 hours of direct sunlight** every day.  
+      If sunlight is too harsh, give them some shade in the afternoon.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">💧 Step 4 — Watering</div>
+    <p>
+      Water roses early in the morning.  
+      👉 Keep the soil moist but don’t make it muddy.<br>
+      👉 In hot weather, water daily. In winter, every 2–3 days is enough.<br>
+      Avoid watering leaves to prevent fungus.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌼 Step 5 — Taking Care</div>
+    <p>
+      👉 Remove old or dried flowers — this helps new buds bloom.<br>
+      👉 Trim the plant once every 2 months to keep it healthy.<br>
+      👉 If you see small insects, spray neem oil mixed with water.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌹 Step 6 — Flowering Time</div>
+    <p>
+      Roses bloom mostly in **winter and early spring**.  
+      You’ll see buds appear in 40–50 days after planting — water regularly and smile when they open!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">👩‍🌾 Farmer’s Tips</div>
+    <p>
+      ✅ Use compost every 15 days during blooming season.<br>
+      ✅ Keep trimming dead branches — it helps new flowers grow.<br>
+      ✅ Roses love sunlight and fresh air — keep them outdoors.<br>
+      ✅ Don’t move the plant too often once it’s growing well.
+    </p>
+  </div>
+
+  <a class="back-btn" href="flowers.html">⬅ Back</a>
+  <!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Grow Coconut Tree - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #e0f7fa;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .section {
+      background: white;
+      width: 85%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #004d40;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00796b;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #009688;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      img { width: 90%; }
+      .section { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🥥 How to Grow Coconut Tree (Farmer’s Way)</header>
+
+  <img src="images/coconut.png" alt="Coconut Tree">
+
+  <div class="section">
+    <div class="title">👨‍🌾 Namaste! Let’s Grow a Coconut Tree</div>
+    <p>
+      The coconut tree is a true friend — it gives us food, water, oil, and shade.  
+      It grows tall and strong, especially in warm, coastal weather.  
+      Let’s learn how to grow your very own coconut tree at home or on a farm!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌱 Step 1 — Choosing the Coconut</div>
+    <p>
+      👉 Choose a mature, brown coconut that still has water inside.<br>
+      👉 Shake it — if you hear sloshing, it’s good!<br>
+      👉 Place it in water for 3–4 days to soften the shell before planting.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌾 Step 2 — Preparing the Soil</div>
+    <p>
+      👉 Coconut trees grow best in **sandy or loamy soil**.<br>
+      👉 Mix soil with compost or cow dung for better nutrition.<br>
+      👉 Make sure the soil drains water easily — coconuts dislike soggy ground.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🥥 Step 3 — Planting the Coconut</div>
+    <p>
+      👉 Dig a pit about 2–3 feet deep.<br>
+      👉 Lay the coconut sideways with one-third of it above the soil.<br>
+      👉 Cover it gently with soil and water lightly.<br>
+      👉 If growing in a pot, use one that’s at least 20 inches deep.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">☀️ Step 4 — Sunlight</div>
+    <p>
+      Coconut trees love **full sunlight** all day long.  
+      Place your plant in an open area — not under shade or near large trees.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">💧 Step 5 — Watering</div>
+    <p>
+      👉 Water every 2–3 days when the plant is young.<br>
+      👉 Once it starts growing tall, water deeply twice a week.<br>
+      👉 In hot weather, pour water near the roots — not on the leaves.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🪴 Step 6 — Taking Care</div>
+    <p>
+      👉 Add compost every 2 months for strong growth.<br>
+      👉 Remove weeds around the base.<br>
+      👉 If leaves turn yellow, spray neem oil water — it keeps insects away.<br>
+      👉 Give support if the plant bends during storms.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌴 Step 7 — Growth & Harvest</div>
+    <p>
+      Coconut trees grow slowly but live long — up to 80–100 years!  
+      They start giving coconuts in **5–6 years**.  
+      Once mature, you’ll get fruits every 2–3 months — that’s free coconut water forever!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">👩‍🌾 Farmer’s Tips</div>
+    <p>
+      ✅ Coconut trees need full sunlight and space.<br>
+      ✅ Don’t flood the soil — roots need air.<br>
+      ✅ Mix sea sand in soil if you live inland.<br>
+      ✅ Keep patience — it takes time but rewards for life.
+    </p>
+  </div>
+
+  <a class="back-btn" href="trees.html">⬅ Back</a>
+<!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+</body>
+</html>

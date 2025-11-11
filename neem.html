@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Grow Neem Tree - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #e8f5e9;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .section {
+      background: white;
+      width: 85%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #1b5e20;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #2e7d32;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #43a047;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      img { width: 90%; }
+      .section { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌿 How to Grow Neem Tree (Farmer’s Way)</header>
+
+  <img src="images/neem.png" alt="Neem Tree">
+
+  <div class="section">
+    <div class="title">👨‍🌾 Namaste! Let’s Grow a Neem Tree</div>
+    <p>
+      Neem is called “Nature’s Doctor.”  
+      Its leaves clean the air, its bark heals wounds, and its shade keeps the land cool.  
+      Every farmer loves to have a neem tree nearby!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌱 Step 1 — Choosing the Right Spot</div>
+    <p>
+      👉 Neem trees love **sunlight and open air**.<br>
+      👉 Choose a place where it gets sunlight all day long.<br>
+      👉 If growing in a pot, make sure it’s deep (at least 12–15 inches).
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌾 Step 2 — Planting Neem Seeds or Saplings</div>
+    <p>
+      👉 Neem can grow from seeds or young plants from a nursery.<br>
+      👉 Plant the seed about 1 inch deep in soft soil.<br>
+      👉 Water lightly and keep the soil moist until it sprouts (in 10–12 days).<br>
+      👉 If using a sapling, dig a small pit, fill with compost, and plant gently.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">☀️ Step 3 — Sunlight</div>
+    <p>
+      Neem trees grow best in **full sunlight**.  
+      The more light they get, the faster and stronger they become.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">💧 Step 4 — Watering</div>
+    <p>
+      👉 When young, water every 3 days.<br>
+      👉 After 2–3 months, water only once a week.<br>
+      👉 Mature neem trees can survive even in dry soil — they’re strong and self-sufficient!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🪴 Step 5 — Taking Care</div>
+    <p>
+      👉 Add compost once every 2 months during the first year.<br>
+      👉 Remove weeds from around the plant base.<br>
+      👉 Neem is naturally pest-resistant, but you can spray neem oil for extra protection.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌿 Step 6 — Growth & Uses</div>
+    <p>
+      Neem grows fast! Within 2–3 years, it becomes a beautiful shade tree.  
+      Its leaves, bark, and oil are all used for medicine, skincare, and farming.  
+      Truly a tree that gives back in every way!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">👩‍🌾 Farmer’s Tips</div>
+    <p>
+      ✅ Plant neem in open, sunny areas.<br>
+      ✅ Avoid overwatering — neem likes dry soil.<br>
+      ✅ Use compost, not chemical fertilizer.<br>
+      ✅ Give space — neem roots spread wide underground.
+    </p>
+  </div>
+
+  <a class="back-btn" href="trees.html">⬅ Back</a>
+  <!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+</body>
+</html>

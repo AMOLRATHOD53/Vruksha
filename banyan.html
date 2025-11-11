@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Grow Banyan Tree - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f1f8e9;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #33691e;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .section {
+      background: white;
+      width: 85%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #1b5e20;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #33691e;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #558b2f;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      img { width: 90%; }
+      .section { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌳 How to Grow Banyan Tree (Farmer’s Way)</header>
+
+  <img src="images/banyan.png" alt="Banyan Tree">
+
+  <div class="section">
+    <div class="title">👨‍🌾 Namaste, My Friend!</div>
+    <p>
+      The Banyan tree is India’s national tree — strong, sacred, and full of life.  
+      It grows wide with roots that hang down like ropes, giving shade and home to many birds and animals.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌱 Step 1 — Choosing the Right Spot</div>
+    <p>
+      👉 Banyan trees need **a lot of open space** — they spread wide!<br>
+      👉 Plant it far from walls or houses.<br>
+      👉 They grow best in warm, tropical climates with full sunlight.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌾 Step 2 — Planting the Sapling</div>
+    <p>
+      👉 Get a young banyan sapling from a nursery or grow from a small branch cutting.<br>
+      👉 Dig a hole about 2 feet deep and fill it with soil mixed with compost.<br>
+      👉 Place the sapling upright and cover the roots fully.<br>
+      👉 Water gently and press the soil around it.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">☀️ Step 3 — Sunlight & Space</div>
+    <p>
+      The Banyan loves **bright sunlight** and open air.  
+      Don’t plant it in shade — it grows best under full sun.  
+      Its roots spread wide, so give it plenty of room to grow freely.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">💧 Step 4 — Watering</div>
+    <p>
+      👉 Water every 2–3 days when young.<br>
+      👉 Once it’s strong, water once a week — banyans are hardy.<br>
+      👉 Avoid overwatering — just keep the soil slightly moist.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🪴 Step 5 — Taking Care</div>
+    <p>
+      👉 Add compost every month during the first year.<br>
+      👉 Trim dry or damaged branches once a year.<br>
+      👉 Protect young trees from goats or animals — they may eat the leaves!<br>
+      👉 Once mature, it needs little care — it will care for you instead.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌳 Step 6 — Growth & Life</div>
+    <p>
+      Banyan trees grow slowly but live for hundreds of years!  
+      Its hanging roots turn into new trunks, making it look like a forest by itself.  
+      It’s a symbol of strength, wisdom, and shelter for all.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">👩‍🌾 Farmer’s Tips</div>
+    <p>
+      ✅ Plant in open sunlight, not shade.<br>
+      ✅ Avoid growing near buildings — roots are strong.<br>
+      ✅ Give compost regularly for healthy growth.<br>
+      ✅ Be patient — it takes time but becomes a giant friend.
+    </p>
+  </div>
+
+  <a class="back-btn" href="trees.html">⬅ Back</a>
+<!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+
+</body>
+</html>

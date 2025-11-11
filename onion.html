@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Grow Onion - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fff9e6;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #ffb300;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .section {
+      background: white;
+      width: 85%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #e65100;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #e65100;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ffb300;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      img { width: 90%; }
+      .section { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🧅 How to Grow Onions (Farmer’s Way)</header>
+
+  <img src="images/onion.png" alt="Onion">
+
+  <div class="section">
+    <div class="title">👨‍🌾 Namaste! Let’s Grow Some Onions</div>
+    <p>
+      Onions are simple and fun to grow. They don’t need much care, just some patience and sunlight.  
+      Whether in pots or garden soil, onions grow happily with a little attention.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌱 Step 1 — Preparing the Soil</div>
+    <p>
+      Onions like dry, loose soil that drains well. They don’t like standing water.<br><br>
+      👉 Mix garden soil with sand and compost (2:1:1 ratio).<br>
+      👉 Make sure the soil is soft, so bulbs can grow easily.<br>
+      👉 Remove stones or big lumps from the soil.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🧄 Step 2 — Planting Onion Bulbs (Sets)</div>
+    <p>
+      You can grow onions from seeds or small onion bulbs (called “sets”).  
+      Bulbs grow faster and are easier for beginners.<br><br>
+      👉 Plant bulbs 1 inch deep with the pointed side facing up.<br>
+      👉 Keep 3–4 inches between each bulb.<br>
+      👉 Cover lightly with soil — don’t press hard.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">☀️ Step 3 — Sunlight and Space</div>
+    <p>
+      Onions love sunlight! Place them where they can get 5–6 hours of direct light every day.  
+      If growing in pots, keep them in an open balcony or terrace.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">💧 Step 4 — Watering</div>
+    <p>
+      Water lightly every 2–3 days. Keep the soil moist but never wet.<br>
+      Once you see bulbs forming, reduce watering — this helps onions grow stronger and store longer.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌾 Step 5 — Taking Care</div>
+    <p>
+      Remove weeds regularly — they steal nutrients!  
+      You can sprinkle a little compost after 15 days for better bulb growth.  
+      If leaves turn yellow, don’t worry — that means the bulbs are maturing.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🧅 Step 6 — Harvesting</div>
+    <p>
+      After about 90–100 days, the leaves will dry and bend over.  
+      That’s your signal — onions are ready to harvest!  
+      Gently pull them out, shake off soil, and dry in sunlight for 2–3 days before storing.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">👩‍🌾 Farmer’s Tips</div>
+    <p>
+      ✅ Don’t overwater — it can rot bulbs.<br>
+      ✅ Keep enough space between plants for good air flow.<br>
+      ✅ Sunlight makes bulbs bigger and tastier.<br>
+      ✅ Use natural compost — onions love organic soil.
+    </p>
+  </div>
+
+  <a class="back-btn" href="vegetables.html">⬅ Back</a>
+  <!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+</body>
+</html>

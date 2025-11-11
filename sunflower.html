@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Grow Sunflower - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fffde7;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #fbc02d;
+      color: #333;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .section {
+      background: white;
+      width: 85%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #f57f17;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #fbc02d;
+      color: #333;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #fdd835;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      img { width: 90%; }
+      .section { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌻 How to Grow Sunflowers (Farmer’s Way)</header>
+
+  <img src="images/sunflower.png" alt="Sunflower">
+
+  <div class="section">
+    <div class="title">👨‍🌾 Hello Sunshine Lover!</div>
+    <p>
+      Sunflowers are cheerful and easy to grow.  
+      They follow the sun all day — turning their face from east to west!  
+      Let’s learn how to grow these bright flowers at home or in your garden.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌱 Step 1 — Preparing the Soil</div>
+    <p>
+      👉 Choose soil that drains well but holds a little moisture.<br>
+      👉 Mix garden soil with compost or cow dung to make it rich.<br>
+      👉 Make sure the area gets full sunlight — sunflowers love bright light!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌾 Step 2 — Sowing the Seeds</div>
+    <p>
+      👉 Plant the seeds directly in the soil (don’t start in small pots).<br>
+      👉 Sow seeds about 1 inch deep and keep 6 inches apart.<br>
+      👉 Cover gently with soil and water lightly.<br>
+      After 5–7 days, you’ll see baby plants coming up!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">☀️ Step 3 — Sunlight</div>
+    <p>
+      The name says it all — “Sun-flower”! 🌞  
+      Place your plants where they get at least **6–8 hours of sunlight** every day.  
+      Sunlight makes them tall, strong, and full of bright yellow petals.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">💧 Step 4 — Watering</div>
+    <p>
+      👉 Water daily in the morning when the top soil feels dry.<br>
+      👉 Don’t overwater — roots should stay moist, not soggy.<br>
+      👉 During flowering, give extra water to help seeds grow healthy.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🪴 Step 5 — Taking Care</div>
+    <p>
+      👉 Tall plants may bend in the wind — tie them to a stick or support.<br>
+      👉 Remove weeds regularly so the plants get enough nutrients.<br>
+      👉 Add compost every 2 weeks to keep the flowers bright and strong.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌻 Step 6 — Flowering & Harvest</div>
+    <p>
+      After about **60–80 days**, you’ll see beautiful yellow flowers.  
+      Once the flower dries, you can collect sunflower seeds for eating or replanting.  
+      Isn’t that amazing — one flower gives many more!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">👩‍🌾 Farmer’s Tips</div>
+    <p>
+      ✅ Plant in full sunlight.<br>
+      ✅ Avoid planting during heavy rain.<br>
+      ✅ Keep pests away with neem spray.<br>
+      ✅ Save seeds from dry flowers for the next season!
+    </p>
+  </div>
+
+  <a class="back-btn" href="flowers.html">⬅ Back</a>
+  <!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Grow Mango Tree - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fff9c4;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #f9a825;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .section {
+      background: white;
+      width: 85%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #e65100;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #f9a825;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ffb300;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      img { width: 90%; }
+      .section { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🥭 How to Grow Mango Tree (Farmer’s Way)</header>
+
+  <img src="images/mango.png" alt="Mango Tree">
+
+  <div class="section">
+    <div class="title">👨‍🌾 Namaste! Let’s Grow a Mango Tree</div>
+    <p>
+      The mango tree is called the “King of Fruits” — sweet, juicy, and loved by all.  
+      It grows strong and lives long if you give it space, sunlight, and care.  
+      Let’s learn how to grow your own mango tree!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌱 Step 1 — Choose the Right Spot</div>
+    <p>
+      👉 Mango trees love warmth and sunlight — choose an open area with 6–8 hours of sunlight daily.<br>
+      👉 If you’re planting in a pot, choose one that’s deep (at least 16–20 inches).<br>
+      👉 Avoid planting near walls — give space for roots to spread.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌾 Step 2 — Planting the Seed or Sapling</div>
+    <p>
+      You can grow from a seed or buy a grafted sapling from a nursery.<br><br>
+      👉 If using a seed, clean it and plant it 3 inches deep in moist soil.<br>
+      👉 Keep the seed sideways for better sprouting.<br>
+      👉 For saplings, dig a hole twice the size of the roots and fill it with compost soil mix.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">☀️ Step 3 — Sunlight & Space</div>
+    <p>
+      Mango trees love full sunlight.  
+      Keep them outdoors where they can grow tall — at least 10–15 feet of free space around the plant.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">💧 Step 4 — Watering</div>
+    <p>
+      👉 Water the plant every 2–3 days when it’s young.<br>
+      👉 Once it grows strong, reduce watering to twice a week.<br>
+      👉 Don’t overwater — mango roots dislike soggy soil.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🪴 Step 5 — Taking Care</div>
+    <p>
+      👉 Add compost or cow dung every 2 months for healthy growth.<br>
+      👉 Trim dry or old branches once a year.<br>
+      👉 Protect from insects by spraying neem water if needed.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🥭 Step 6 — Fruit Time</div>
+    <p>
+      Grafted mango trees can start giving fruit in 3–4 years!  
+      Flowers appear in summer, and fruits are ready in about 4 months.  
+      Patience is key — a happy mango tree gives fruits for decades.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">👩‍🌾 Farmer’s Tips</div>
+    <p>
+      ✅ Give the plant full sunlight.<br>
+      ✅ Use compost, not chemicals.<br>
+      ✅ Water deeply but not daily.<br>
+      ✅ Keep space around the tree — mango roots spread wide.
+    </p>
+  </div>
+
+  <a class="back-btn" href="trees.html">⬅ Back</a>
+  <!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+</body>
+</html>

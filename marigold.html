@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marigold - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fff8ec;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #f57f17;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .section {
+      background: white;
+      width: 80%;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #f57f17;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #f57f17;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      img { width: 90%; }
+      .section { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌼 Marigold</header>
+
+  <img src="images/marigold.png" alt="Marigold">
+
+  <div class="section">
+    <div class="title">🌿 Description</div>
+    Marigold is a bright orange or yellow flower that blooms easily in sunlight. It is often used in gardens and decorations.
+  </div>
+
+  <div class="section">
+    <div class="title">📌 Instructions</div>
+    1. Use well-drained, fertile soil.<br>
+    2. Plant seeds or saplings in a sunny area.<br>
+    3. Pinch off old flowers to encourage new blooms.<br>
+    4. Avoid waterlogging around roots.
+  </div>
+
+  <div class="section">
+    <div class="title">💧 Watering</div>
+    Water every 2–3 days; keep soil slightly moist.
+  </div>
+
+  <div class="section">
+    <div class="title">🌱 Fertilizer</div>
+    Use compost or organic fertilizer once every 2 weeks.
+  </div>
+
+  <a class="back-btn" href="flowers.html">⬅ Back</a>
+  <!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+
+</body>
+</html>

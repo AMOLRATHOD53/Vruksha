@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Grow Lotus - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fce4ec;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #ec407a;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .section {
+      background: white;
+      width: 85%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #ad1457;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ad1457;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ec407a;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      img { width: 90%; }
+      .section { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌸 How to Grow Lotus (Farmer’s Way)</header>
+
+  <img src="images/lotus.png" alt="Lotus">
+
+  <div class="section">
+    <div class="title">👨‍🌾 Namaste, My Friend!</div>
+    <p>
+      The lotus is a flower of peace and beauty.  
+      It grows in water and opens its petals with the morning sun.  
+      Don’t worry — you can grow a lotus easily at home in a pot or small tub!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌱 Step 1 — Choose the Right Pot</div>
+    <p>
+      👉 Take a wide and shallow pot (12–16 inches across).<br>
+      👉 Make sure it has no drainage holes — lotus likes water to stay inside.<br>
+      👉 You can also use a tub, old bucket, or even a small pond.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌾 Step 2 — Prepare the Mud</div>
+    <p>
+      👉 Use heavy soil, not sandy or clay-like.<br>
+      👉 Mix 80% garden soil + 20% cow dung or compost.<br>
+      👉 Fill the pot about ¾ full with soil.<br>
+      👉 Pour water slowly until you have a layer of water above the soil (about 3–4 inches deep).
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌷 Step 3 — Planting the Lotus</div>
+    <p>
+      👉 Take a lotus tuber (a small root-like piece).<br>
+      👉 Gently push it into the soil — do not bury completely, just cover lightly.<br>
+      👉 Keep the growing tip facing upward.<br>
+      👉 Be gentle — the tuber is soft and breaks easily.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">☀️ Step 4 — Sunlight</div>
+    <p>
+      Lotus loves the sun — at least **6 to 8 hours of sunlight** every day.  
+      Place your pot in a sunny corner or terrace.  
+      Without enough light, it won’t bloom well.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">💧 Step 5 — Water Level</div>
+    <p>
+      👉 Always keep 3–4 inches of water above the soil.<br>
+      👉 Refill if water evaporates.<br>
+      👉 Change the water once a month to keep it clean and healthy.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌼 Step 6 — Blooming Time</div>
+    <p>
+      After about **2–3 months**, your lotus will start to bloom.  
+      Flowers open in the morning and close by evening — it’s a beautiful sight to watch daily!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">👩‍🌾 Farmer’s Tips</div>
+    <p>
+      ✅ Never use chemical fertilizer — lotus prefers natural compost.<br>
+      ✅ Don’t move the pot once it starts growing.<br>
+      ✅ Clean green algae from the surface once a week.<br>
+      ✅ Give it peace, water, and sunlight — it will thank you with beauty.
+    </p>
+  </div>
+
+  <a class="back-btn" href="flowers.html">⬅ Back</a>
+ <!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+</body>
+</html>

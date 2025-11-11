@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Grow Tomato - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fff2f2;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #e53935;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .section {
+      background: white;
+      width: 85%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #c62828;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #c62828;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #e53935;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      img { width: 90%; }
+      .section { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🍅 How to Grow Tomatoes (Farmer’s Way)</header>
+
+  <img src="images/tomato.png" alt="Tomato">
+
+  <div class="section">
+    <div class="title">👨‍🌾 Welcome, My Friend!</div>
+    <p>
+      Want to grow your own juicy red tomatoes? Wonderful!  
+      Tomatoes love warmth and care — if you treat them right, they’ll reward you with lots of fruits. Let’s grow them together!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌱 Step 1 — Prepare the Soil</div>
+    <p>
+      Tomatoes need rich, soft soil that can hold moisture but not stay muddy.<br><br>
+      👉 Mix garden soil with compost or dry cow dung.<br>
+      👉 Make sure water drains easily from your pot or bed.<br>
+      👉 If you’re using pots, choose one that’s at least 10 inches deep.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌿 Step 2 — Planting the Seeds or Saplings</div>
+    <p>
+      👉 You can start from seeds or buy small plants from a nursery.<br>
+      👉 If planting seeds, sow them 1 cm deep and cover lightly with soil.<br>
+      👉 Keep them warm until they sprout — about 6–7 days.<br>
+      👉 Once the plants are 4–5 inches tall, move them into bigger pots or soil beds.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">☀️ Step 3 — Give Them Sunshine</div>
+    <p>
+      Tomatoes love the sun!  
+      Place your plants where they get at least 6–8 hours of sunlight every day.  
+      The more sunlight they get, the sweeter your tomatoes will be.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">💧 Step 4 — Watering Time</div>
+    <p>
+      Water your tomato plants every morning, near the base of the plant — not on the leaves.<br>
+      Wet leaves can attract fungus.  
+      Keep the soil slightly moist, not dry and not soggy.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🪴 Step 5 — Taking Care</div>
+    <p>
+      As your plant grows taller, it might bend or fall — so give it support using a stick or wire loop.<br>
+      Remove yellow or dry leaves and watch for tiny insects — they love tomato leaves!  
+      You can spray neem water to keep them away naturally.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🍅 Step 6 — Harvesting</div>
+    <p>
+      In about 2 months, your tomatoes will start turning red and shiny.  
+      Gently pluck them when they’re fully colored.  
+      Always pick in the morning for the best taste and freshness.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">👩‍🌾 Farmer’s Tips</div>
+    <p>
+      ✅ Don’t overwater — too much water spoils roots.<br>
+      ✅ Keep removing side branches (“suckers”) for bigger tomatoes.<br>
+      ✅ Feed compost every 15 days to keep your plant healthy.<br>
+      ✅ Sunlight and patience give you the best results!
+    </p>
+  </div>
+
+  <a class="back-btn" href="vegetables.html">⬅ Back</a>
+  <!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vruksha - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f7fff7;
+      text-align: center;
+    }
+
+    header {
+      background-color: #1b5e20;
+      color: white;
+      padding: 25px;
+      font-size: 28px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      font-weight: 600;
+    }
+
+    /* Category Container */
+    .category-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 50px;
+      padding: 10px;
+    }
+
+    /* Each Category Card */
+    .category-card {
+      background: white;
+      width: 220px;
+      padding: 15px;
+      border-radius: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .category-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    h2 {
+      margin-top: 10px;
+      color: #1b5e20;
+      font-size: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #666;
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    /* Responsive for Mobile */
+    @media (max-width: 600px) {
+      .category-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .category-card {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌿 Vruksha</header>
+
+  <div class="category-container">
+
+    <div class="category-card" onclick="openPage('vegetables.html')">
+      <img src="images/vegetables.png" alt="Vegetables">
+      <h2>Vegetables</h2>
+    </div>
+
+    <div class="category-card"  onclick="openPage('flowers.html')">
+      <img src="images/flowers.png" alt="Flowers">
+      <h2>Flowers</h2>
+    </div>
+
+   
+
+    <div class="category-card" onclick="openPage('Trees.html')">
+      <img src="images/trees.png" alt="Trees">
+      <h2>Trees</h2>
+    </div>
+
+  </div>
+
+  <footer>🌱 Learn • Grow • Care — with Vruksha</footer>
+
+  <script>
+    function openPage(page) {
+      window.location.href = page;
+    }
+  </script>
+ <!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+
+</script>
+
+</body>
+</html>

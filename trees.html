@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trees - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #e8f5e9;
+      text-align: center;
+    }
+
+    header {
+      background-color: #1b5e20;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: 600;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    .plant-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 40px;
+      padding: 10px;
+    }
+
+    .plant-card {
+      background: white;
+      width: 220px;
+      padding: 15px;
+      border-radius: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+    }
+
+    .plant-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #1b5e20;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #1b5e20;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .plant-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .plant-card {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌳 Trees</header>
+
+  <div class="plant-container">
+
+    <div class="plant-card" onclick="openPage('mango.html')">
+      <img src="images/mango.png" alt="Mango">
+      <h2>Mango</h2>
+    </div>
+
+    <div class="plant-card" onclick="openPage('neem.html')">
+      <img src="images/neem.png" alt="Neem">
+      <h2>Neem</h2>
+    </div>
+
+    <div class="plant-card" onclick="openPage('coconut.html')">
+      <img src="images/coconut.png" alt="Coconut">
+      <h2>Coconut</h2>
+    </div>
+
+    <div class="plant-card" onclick="openPage('banyan.html')">
+      <img src="images/banyan.png" alt="Banyan">
+      <h2>Banyan</h2>
+    </div>
+
+  </div>
+
+  <a class="back-btn" href="index.html">⬅ Back</a>
+
+  <script>
+    function openPage(page) {
+      window.location.href = page;
+    }
+  </script>
+	<!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Grow Carrot - Vruksha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fff6e5;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #ff9800;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    .section {
+      background: white;
+      width: 85%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-size: 20px;
+      color: #e65100;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #e65100;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ff9800;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      img { width: 90%; }
+      .section { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🥕 How to Grow Carrots (Farmer’s Way)</header>
+
+  <img src="images/carrot.png" alt="Carrot">
+
+  <div class="section">
+    <div class="title">👨‍🌾 Hello there!</div>
+    <p>
+      So you want to grow carrots? That’s great! Carrots are easy to grow and taste much sweeter when you grow them yourself. Let’s start step by step.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌱 Step 1 — Prepare the Soil</div>
+    <p>
+      Carrots grow under the ground, so they need soft, loose soil. If your soil has stones or hard lumps, the carrot will grow bent or small.<br><br>
+      👉 Take a pot or garden patch with fine, crumbly soil.<br>
+      👉 Mix a little compost or cow dung to make it rich.<br>
+      👉 Keep the soil about 6–8 inches deep for straight carrots.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🌾 Step 2 — Sow the Seeds</div>
+    <p>
+      Carrot seeds are tiny, so don’t throw them all in one spot!<br><br>
+      👉 Make small lines (rows) 1 inch apart.<br>
+      👉 Drop the seeds gently, not too close.<br>
+      👉 Cover with a thin layer of soil — don’t press hard.<br>
+      Carrot seeds like air and space to grow.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">☀️ Step 3 — Give Sunlight</div>
+    <p>
+      Keep your pot or bed where it gets 4–6 hours of sunlight every day. Too much heat can make carrots rough, so a little shade helps too.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">💧 Step 4 — Water Properly</div>
+    <p>
+      Keep the soil moist but not flooded. Water every 2–3 days. If the soil dries out, carrots may crack. If it’s too wet, they might rot.<br>
+      Just check with your finger — if the top feels dry, water them!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🍃 Step 5 — Care and Growth</div>
+    <p>
+      Once you see small green leaves, those are your baby carrots! Remove weeds around them and sprinkle compost after 15 days for faster growth.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">🥕 Step 6 — Harvest Time</div>
+    <p>
+      After 70–80 days, you’ll notice strong green tops. Gently pull one carrot — if it’s orange and thick, they’re ready!<br>
+      Don’t wait too long, old carrots get hard.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="title">👩‍🌾 Farmer’s Tips</div>
+    <p>
+      ✅ Always use soft, loose soil.<br>
+      ✅ Avoid chemical fertilizers — compost works best.<br>
+      ✅ For insects, spray neem water (1 spoon neem oil + 1 liter water).<br>
+      ✅ Keep patience — good carrots take time!
+    </p>
+  </div>
+
+  <a class="back-btn" href="vegetables.html">⬅ Back</a>
+<!-- 🌿 Click Sound Setup -->
+<audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.currentTime = 0;  // restart sound each click
+    sound.volume = 0.3;     // lower the volume
+    sound.play();           // play sound
+  }
+  function openPage(page) {
+    playClickSound(); // play sound
+    // small delay (200ms) so sound starts before page loads
+    setTimeout(() => {
+      window.location.href = page;
+    }, 200);
+  }
+</script>
+
+</body>
+</html>
